@@ -11,12 +11,12 @@ const Project = () => {
     useEffect(() => {
         const fetchProject = async () => {
             try {
-                if(id){
+                if(id !== undefined) {
                     const response = await fetch('/data/projects.json'); 
                     const data: ProjectInterface[] = await response.json();
     
                     // Find the project by id
-                    const selectedProject = data.find(proj => proj.id === parseInt(id));
+                    const selectedProject = data.find(proj => proj.id === parseInt(id, 10));
                     if (selectedProject) {
                         setProject(selectedProject);
                     } else {
