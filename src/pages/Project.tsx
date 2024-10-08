@@ -11,15 +11,19 @@ const Project = () => {
     useEffect(() => {
         const fetchProject = async () => {
             try {
-                const response = await fetch('/data/projects.json'); 
-                const data: ProjectInterface[] = await response.json();
-
-                // Find the project by id
-                const selectedProject = data.find(proj => proj.id === parseInt(id));
-                if (selectedProject) {
-                    setProject(selectedProject);
+                if(id){
+                    const response = await fetch('/data/projects.json'); 
+                    const data: ProjectInterface[] = await response.json();
+    
+                    // Find the project by id
+                    const selectedProject = data.find(proj => proj.id === parseInt(id));
+                    if (selectedProject) {
+                        setProject(selectedProject);
+                    } else {
+                        console.error("Project not found");
+                    }
                 } else {
-                    console.error("Project not found");
+                    console.error("Project id not provided");
                 }
             } catch (error) {
                 console.error("Failed to fetch project", error);
