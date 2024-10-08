@@ -1,0 +1,56 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-gap($gap: 1rem) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin grid-center{
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+
+@mixin responsive-grid($min-width: 200px, $gap: 16px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: $gap;
+}
+
+//Button mixin, large, medium and small
+@mixin button($size: large) {
+  @if $size == large {
+    padding: 1rem 2rem;
+    // font-size: 1.25rem;
+  } @else if $size == medium {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  } @else if $size == small {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

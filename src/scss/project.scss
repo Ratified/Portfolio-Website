@@ -1,0 +1,23 @@
+@use 'variables';
+
+.project{
+    margin: 1rem;
+    
+    &-images-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+        gap: 1rem;
+        border: 1px solid variables.$color-dark-blue;
+        padding: 1rem 2rem;
+
+        img:hover{
+            transform: scale(1.2);
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+    }
+
+    &-details{
+        margin: 2rem;
+    }
+}

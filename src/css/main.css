@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  overflow-wrap: break-word;
+}
+
+p, li, figcation {
+  text-wrap: pretty;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  font-style: italic;
+  shape-margin: 1rem;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #02041f;
+  color: #F8FAFC;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.description {
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+.service__cards,
+.education__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.highlight {
+  color: #3B82F6;
+}
+
+.header {
+  background: url("/images/background.jpeg") no-repeat center center/cover;
+  background-attachment: fixed;
+}
+.header .navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  padding: 0 2rem;
+  z-index: 1000;
+}
+.header .navigation ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.header .navigation ul li a {
+  color: #F8FAFC;
+}
+.header .navigation__social-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.header .navigation__social-media .btn {
+  display: inline-block;
+  background-color: #F8FAFC;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  color: #1E3A78;
+}
+.header .navigation__social-media .social-media__icons {
+  font-size: 1rem;
+  display: flex;
+  gap: 0.2rem;
+}
+.header .navigation__social-media .social-media__icons i {
+  border: 1px solid #F8FAFC;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .hero {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  width: 60%;
+  margin-inline: auto;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #02041f;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.languages {
+  background: linear-gradient(135deg, #1E3A78, #02041f, #F8FAFC);
+}
+
+marquee {
+  padding: 40px;
+  display: flex;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #F8FAFC;
+}
+
+.service__cards {
+  gap: 1.5rem;
+}
+.service__cards .service__card {
+  background-color: #1E3A78;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #F8FAFC;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.service__cards .service__card i {
+  font-size: 3rem;
+}
+.service__cards .service__card:hover {
+  background-color: rgb(11.1512195122, 99.1219512195, 242.8487804878);
+}
+.service__cards .service__card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.service__cards .service__card p {
+  font-size: 1rem;
+}
+
+.education__cards {
+  gap: 1.5rem;
+}
+.education__cards .education__card {
+  background-color: #1E3A78;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #F8FAFC;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.education__cards .education__card i {
+  font-size: 3rem;
+}
+.education__cards .education__card:hover {
+  background-color: rgb(11.1512195122, 99.1219512195, 242.8487804878);
+}
+.education__cards .education__card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.education__cards .education__card p {
+  font-size: 1rem;
+}
+
+.projects__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  gap: 1.5rem;
+}
+.projects__cards .project__card {
+  border: 1px solid #1E3A78;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+.projects__cards .project__card .project__details {
+  margin-top: 1rem;
+}
+.projects__cards .project__card .project__details .btn-project {
+  display: inline-block;
+  background-color: #1E3A78;
+  color: #F8FAFC;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.projects__cards .project__card .project__details .btn-project:hover {
+  background-color: rgb(19.8, 38.28, 79.2);
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+form .btn {
+  display: inline-block;
+  background-color: #1E3A78;
+  color: #F8FAFC;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+form .btn:hover {
+  background-color: rgb(11.1512195122, 99.1219512195, 242.8487804878);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3B82F6;
+  background: transparent;
+  font-size: 15px;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  line-height: 20px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  background-color: #1E3A78;
+  padding: 2rem;
+  color: #F8FAFC;
+  display: flex;
+  justify-content: space-between;
+}
+.footer a {
+  color: #F8FAFC;
+}
+
+/*# sourceMappingURL=main.css.map */

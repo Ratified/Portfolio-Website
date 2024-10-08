@@ -1,0 +1,310 @@
+@use "mixins";
+@use "variables";
+@import "reset";
+
+body {
+  font-family: variables.$font-Poppins;
+  background-color: variables.$color-main;
+  color: variables.$color-soft-white;
+}
+
+// General styles
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.description{
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+// .btn {
+//   @include mixins.button(large);
+//   background-color: variables.$color-light-blue;
+//   color: variables.$color-soft-white;
+//   cursor: pointer;
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: darken(variables.$color-light-blue, 10%);
+//   }
+// }
+
+.service__cards,
+.education__cards {
+  @include mixins.responsive-grid(350px, 1rem);
+}
+
+.highlight {
+  color: variables.$color-light-blue;
+}
+
+//Header styles
+.header {
+  background: url("/images/background.jpeg") no-repeat center center/cover;
+  background-attachment: fixed;
+
+  .navigation {
+    position: relative;
+    @include mixins.flex-between;
+    align-items: center;
+    height: variables.$header-height;
+    padding: 0 2rem;
+    z-index: 1000;
+
+    ul {
+      @include mixins.flex-gap;
+      list-style: none;
+      li{
+        a{
+          color: variables.$color-soft-white;
+        }
+      }
+    }
+
+    &__social-media {
+      @include mixins.flex-gap;
+      align-items: center;
+
+      .btn{
+        display: inline-block;
+        background-color: variables.$color-soft-white;
+        padding: 0.5rem 2rem;
+        border-radius: 0.5rem;
+        color: variables.$color-dark-blue;
+      }
+
+      .social-media__icons {
+        font-size: 1rem;
+        display: flex;
+        gap: 0.2rem;
+
+        i{
+          border: 1px solid variables.$color-soft-white;
+          border-radius: 50%;
+          padding: 0.5rem;
+          width: 30px;
+          height: 30px;
+          @include mixins.flex-center;
+        }
+      }
+    }
+  }
+
+  .hero {
+    min-height: calc(100vh - (variables.$header-height));
+    @include mixins.flex-center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    width: 60%;
+    // background-color: red;
+    margin-inline: auto;
+  }
+}
+
+.header::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: variables.$color-main;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+// Marquee styles
+.languages {
+  background: linear-gradient(
+    135deg,
+    variables.$color-dark-blue,
+    variables.$color-main,
+    variables.$color-soft-white
+  );
+}
+
+marquee {
+  padding: 40px;
+  display: flex;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: variables.$color-soft-white;
+}
+
+// Service Cards
+.service__cards {
+  gap: 1.5rem;
+
+  .service__card {
+    background-color: variables.$color-dark-blue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: variables.$color-soft-white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    i {
+      font-size: 3rem;
+    }
+
+    &:hover {
+      background-color: darken(variables.$color-light-blue, 10%);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Education Cards
+.education__cards {
+  gap: 1.5rem;
+
+  .education__card {
+    background-color: variables.$color-dark-blue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: variables.$color-soft-white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+    i {
+      font-size: 3rem;
+    }
+
+    &:hover {
+      background-color: darken(variables.$color-light-blue, 10%);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Project Cards
+.projects__cards {
+  @include mixins.responsive-grid(350px, 1rem);
+  gap: 1.5rem;
+
+  .project__card {
+    border: 1px solid variables.$color-dark-blue;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+
+    .project__details{
+      margin-top: 1rem;
+
+      .btn-project{
+        display: inline-block;
+        background-color: variables.$color-dark-blue;
+        color: variables.$color-soft-white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+          background-color: darken(variables.$color-dark-blue, 10%);
+        }
+      }
+    }
+  }
+}
+
+// Contact Me Section
+form {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+
+  .btn{
+    display: inline-block;
+    background-color: variables.$color-dark-blue;
+    color: variables.$color-soft-white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+
+    &:hover {
+      background-color: darken(variables.$color-light-blue, 10%);
+    }
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid variables.$color-light-blue;
+  background: transparent;
+  font-size: 15px;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  line-height: 20px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+// Footer styles
+.footer {
+  background-color: variables.$color-dark-blue;
+  padding: 2rem;
+  color: variables.$color-soft-white;
+  display: flex;
+  justify-content: space-between;
+
+  a{
+    color: variables.$color-soft-white;
+  }
+}
