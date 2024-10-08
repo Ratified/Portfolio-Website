@@ -213,7 +213,7 @@ section {
   padding: 2rem;
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-left 50s linear infinite;
+  animation: scroll-left 20s linear infinite;
   font-size: 30px;
   text-transform: uppercase;
   color: #F8FAFC;
