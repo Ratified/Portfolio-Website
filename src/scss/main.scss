@@ -134,21 +134,36 @@ section {
 }
 
 // Marquee styles
-.languages {
+.languages-container {
+  overflow: hidden;
+  width: 100%; /* Ensure the container takes the full width */
   background: linear-gradient(
     135deg,
     variables.$color-dark-blue,
     variables.$color-main,
     variables.$color-soft-white
   );
+  box-sizing: border-box;
+  
+  .languages {
+    padding: 2rem;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 50s linear infinite;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #F8FAFC; 
+  }
 }
 
-marquee {
-  padding: 40px;
-  display: flex;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: variables.$color-soft-white;
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Start from the right side (out of view) */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left side */
+  }
 }
 
 // Service Cards

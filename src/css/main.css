@@ -203,18 +203,30 @@ section {
   z-index: 1;
 }
 
-.languages {
+.languages-container {
+  overflow: hidden;
+  width: 100%; /* Ensure the container takes the full width */
   background: linear-gradient(135deg, #1E3A78, #02041f, #F8FAFC);
+  box-sizing: border-box;
 }
-
-marquee {
-  padding: 40px;
-  display: flex;
+.languages-container .languages {
+  padding: 2rem;
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 50s linear infinite;
   font-size: 30px;
   text-transform: uppercase;
   color: #F8FAFC;
 }
 
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Start from the right side (out of view) */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left side */
+  }
+}
 .service__cards {
   gap: 1.5rem;
 }
