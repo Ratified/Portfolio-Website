@@ -26,20 +26,6 @@
     "url": "https://www.broadwrite.com/"
   },
   {
-    "id": 3,
-    "title": "Diacare",
-    "images": ["./images/diacare.png"],
-    "description": "Created a comprehensive diabetes management system for my final year project, featuring multi-user roles for patients, doctors, and administrators.",
-    "keyFeatures": [
-      "Multi user authentication roles.",
-      "Patient and doctor dashboards with role-based access.",
-      "An e-commerce section for purchasing diabetes-related equipment.",
-      "Secure User Authentication and management."
-    ],
-    "technologiesUsed": ["Laravel", "PHP"],
-    "url": "https://github.com/Ratified/Diacare.git"
-  },
-  {
     "id": 4,
     "title": "Multi-step form",
     "images": ["/images/multi-step-form/multi-step-form01.png", "/images/multi-step-form/multi-step-form02.png", "/images/multi-step-form/multi-step-form03.png", "/images/multi-step-form/multi-step-form04.png", "/images/multi-step-form/multi-step-form05.png"],
@@ -51,19 +37,6 @@
     ],
     "technologiesUsed": ["Sass", "React JS", "Typescript"],
     "url": ""
-  },
-  {
-    "id": 5,
-    "title": "Drivemenow",
-    "images": ["./images/drivemenow.png"],
-    "description": "Developed a car borrowing platform using pure vanilla PHP, allowing users to borrow cars through a streamlined process.",
-    "keyFeatures": [
-      "User Registration and car listing.",
-      "Booking and borrowing management.",
-      "Simple, clean interface with efficient backend processes."
-    ],
-    "technologiesUsed": ["PHP", "HTML", "CSS", "MySQL"],
-    "url": "https://github.com/Ratified/drivemenow.git"
   },
   {
     "id": 6,
