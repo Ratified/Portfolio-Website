@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ProjectInterface from "../types/Project";
+
 import "../css/project.css"
 
 const Project = () => {
-    const { id } = useParams();
-    const [project, setProject] = useState(null);
+    const { id } = useParams<{ id: string }>();
+    const [project, setProject] = useState<ProjectInterface | null>(null);
 
     useEffect(() => {
         const fetchProject = async () => {
             try {
                 if(id !== undefined) {
                     const response = await fetch('/data/projects.json'); 
-                    const data = await response.json();
+                    const data: ProjectInterface[] = await response.json();
     
                     // Find the project by id
                     const selectedProject = data.find(proj => proj.id === parseInt(id, 10));
