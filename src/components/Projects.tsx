@@ -36,10 +36,11 @@ const Projects: React.FC = () => {
         <div className="projects__cards">
             {projects.map(project => (
                 <div key={project.id} className="project__card">
+                    <h3 className="mini-title">{project.title}</h3>
                     <img src={project.images[0]} alt={project.title} />
 
                     <div className="project__details">
-                        <h3>{project.title}</h3>
+                        <p className="bold"><span className="highlight">Category:</span> {project.scope}</p>
                         <p>{project.description}</p>
                         <Link to={`/project/${project.id}`} className="btn-project">View Project</Link>
                     </div>

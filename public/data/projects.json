@@ -2,12 +2,14 @@
   {
     "id": 1,
     "title": "OneDollarCV",
-    "images": ["/images/1dollarcv/1dollarcv01.png", "/images/1dollarcv/1dollarcv02.png", "/images/1dollarcv/1dollarcv03.png", "/images/1dollarcv/1dollarcv04.png", "/images/1dollarcv/1dollarcv05.png", "/images/1dollarcv/1dollarcv06.png"],
-    "description": "OneDollarCV is a platform that allows users to create and download professional CVs for just $1. The website is built using HTML, CSS, and JavaScript, with a focus on user-friendly design and functionality.",
+    "scope": "Fullstack Development",
+    "images": ["/images/1dollarcv/1dollarcv01.png", "/images/1dollarcv/1dollarcv02.png", "/images/1dollarcv/1dollarcv03.png", "/images/1dollarcv/1dollarcv04.png", "/images/1dollarcv/1dollarcv05.png"],
+    "description": "A platform that allows users to create and download professional CVs for just $1. Leveraged Laravel for backend services, providing a secure, scalable architecture, and integrated A.I-based job suggestions. The front-end was built with a focus on user experience.",
     "keyFeatures": [
-      "Custom form handling with user input validation.",
+      "A.I-powered job suggestions.",
+      "Custom form handling with validation.",
       "PDF generation and secure download functionality.",
-      "Responsive and user-friendly interface designed by myself."
+      "Responsive and user-friendly design."
     ],
     "technologiesUsed": ["HTML", "CSS", "JavaScript", "Laravel"],
     "url": "https://onedollarcv.com/"
@@ -15,53 +17,99 @@
   {
     "id": 2,
     "title": "Broadwrite",
+    "scope": "Frontend Development",
     "images": ["/images/broadwrite/broadwrite01.png", "/images/broadwrite/broadwrite02.png", "/images/broadwrite/broadwrite03.png", "/images/broadwrite/broadwrite04.png", "/images/broadwrite/broadwrite05.png"],
-    "description": "Developed a marketing website using React.js for Broadwrite, a company dedicated to offering affordable assignment assistance to students. The website effectively communicates the company’s mission to support students in various academic areas.",
+    "description": "Developed a marketing website using React.js for Broadwrite, focusing on dynamic content rendering and seamless user interactions. The platform provides assignment assistance to students in multiple academic disciplines.",
     "keyFeatures": [
-      "Dynamic and responsive front-end built with React.js, ensuring a smooth and engaging user experience.",
-      "Clear presentation of services, including coding assistance in languages like Matlab, Python, C++, and Java.",
-      "Sections dedicated to additional academic support, including essays, dissertations, exams prep, and more."
+      "Responsive design with React.",
+      "Clear presentation of academic services and support.",
+      "Engaging user experience focused on clarity and usability."
     ],
-    "technologiesUsed": ["React JS"],
+    "technologiesUsed": ["React.js"],
     "url": "https://www.broadwrite.com/"
   },
   {
-    "id": 4,
-    "title": "Multi-step form",
+    "id": 3,
+    "title": "Multi-Step Form",
+    "scope": "Fullstack Development",
     "images": ["/images/multi-step-form/multi-step-form01.png", "/images/multi-step-form/multi-step-form02.png", "/images/multi-step-form/multi-step-form03.png", "/images/multi-step-form/multi-step-form04.png", "/images/multi-step-form/multi-step-form05.png"],
-    "description": "Developed a multi-step form using React.js, allowing users to input data across multiple steps. This project demonstrates my ability to create dynamic and engaging user interfaces.",
+    "description": "Developed a multi-step form with dynamic validation and error handling using React.js. Demonstrates my ability to build complex user interfaces that handle multiple inputs across several steps.",
     "keyFeatures": [
-      "Multi-step form with validation and error handling.",
-      "Dynamic form elements that change based on user input.",
-      "Clear and user-friendly interface with a focus on user experience."
+      "Multi-step form with custom validation.",
+      "Real-time error handling for a smoother user experience.",
+      "Modern UI with clean form transitions."
     ],
-    "technologiesUsed": ["Sass", "React JS", "Typescript"],
-    "url": ""
+    "technologiesUsed": ["React JS", "TypeScript", "Sass"],
+    "url": "https://multi-step-form-azure-nu.vercel.app/"
   },
   {
-    "id": 6,
+    "id": 4,
     "title": "Sunnyside Agency Landing Page",
-    "images": ["/images/sunnyside/sunnyside01.png", "/images/sunnyside/sunnyside02.png", "/images/sunnyside/sunnyside03.png", "/images/sunnyside/sunnyside04.png", "/images/sunnyside/sunnyside05.png"],
-    "description": "Developed a landing page for Sunnyside Agency as part of a Frontend Mentor challenge. This project was aimed at testing and enhancing my page layout and CSS skills.",
+    "scope": "Frontend Development",
+    "images": ["/images/sunnyside/sunnyside01.png", "/images/sunnyside/sunnyside02.png", "/images/sunnyside/sunnyside03.png", "/images/sunnyside/sunnyside04.png", "/images/sunnyside/sunnyside01.png"],
+    "description": "Landing page developed as part of a challenge, aimed at creating a modern and responsive layout using HTML and CSS. The design prioritizes visual appeal and usability.",
     "keyFeatures": [
-      "Responsive design ensuring optimal viewing experience across devices.",
-      "Clean and modern layout with a focus on visual hierarchy and user experience.",
-      "Effective use of CSS for layout, typography, and visual elements to create an engaging landing page."
+      "Responsive design across multiple devices.",
+      "Effective use of CSS to enhance visual hierarchy.",
+      "Smooth transitions and clean typography."
     ],
     "technologiesUsed": ["HTML", "CSS", "JavaScript"],
     "url": "https://ratified.github.io/Sunnyside-Agency-Landing-Page/"
   },
   {
-    "id": 7,
+    "id": 5,
     "title": "Laragigs",
+    "scope": "Fullstack Development",
     "images": ["/images/laragigs/laragigs01.png", "/images/laragigs/laragigs02.png", "/images/laragigs/laragigs03.png", "/images/laragigs/laragigs04.png", "/images/laragigs/laragigs05.png"],
-    "description": "Developed a job listing platform using Laravel, allowing users to list jobs and their descriptions. This project demonstrates my ability to build full-featured applications with robust backend support.",
+    "description": "A job listing platform built with Laravel, allowing users to post and manage jobs. The application includes secure authentication and dynamic listing features, providing a full-featured backend and user interface.",
     "keyFeatures": [
-      "User-friendly interface for posting and managing job listings.",
-      "Secure user authentication and job management system.",
-      "Integration with SQL for efficient data storage and retrieval."
+      "Secure user authentication.",
+      "Dynamic job posting and management.",
+      "Efficient database operations with SQL."
     ],
-    "technologiesUsed": ["HTML", "CSS", "JavaScript", "Laravel"],
+    "technologiesUsed": ["Laravel", "SQL", "JavaScript"],
     "url": "https://github.com/Ratified/Laragigs.git"
+  },
+  {
+    "id": 6,
+    "title": "Job Listings (Vue JS)",
+    "scope": "Fullstack Development",
+    "images": ["/images/vue/vue01.png", "/images/vue/vue02.png", "/images/vue/vue03.png", "/images/vue/vue04.png", "/images/vue/vue05.png"],
+    "description": "A job listing application developed with Vue.js, TailwindCSS, and Express.js. Demonstrates proficiency in front-end frameworks and API development.",
+    "keyFeatures": [
+      "Real-time job listings.",
+      "Responsive design with TailwindCSS.",
+      "Backend API integration with Node.js and Express."
+    ],
+    "technologiesUsed": ["Vue.js", "TailwindCSS", "Express.js", "TypeScript"],
+    "url": "https://job-listings-vue-js.vercel.app/"
+  },
+  {
+    "id": 7,
+    "title": "Mini Testing Framework",
+    "scope": "Fullstack Development",
+    "images": ["/images/jest/jest01.png", "/images/jest/jest02.png", "/images/jest/jest03.png", "/images/jest/jest04.png", "/images/jest/jest05.png"],
+    "description": "A lightweight testing framework built from scratch in JavaScript, inspired by Jest. Enables the execution and reporting of test cases, providing a custom test runner and assertion methods.",
+    "keyFeatures": [
+      "Custom test runner and assertions.",
+      "Supports test suites with describe and test functions.",
+      "Extensible design for additional features."
+    ],
+    "technologiesUsed": ["JavaScript"],
+    "url": "https://github.com/Ratified/Custom-MiniTest-Framework---Vanilla-JS.git"
+  },
+  {
+    "id": 9,
+    "title": "Portfolio Website",
+    "scope": "Fullstack Development",
+    "images": ["/images/portfolio/portfolio01.png", "/images/portfolio/portfolio02.png", "/images/portfolio/portfolio03.png", "/images/portfolio/portfolio04.png", "/images/portfolio/portfolio05.png"],
+    "description": "Personal portfolio built with React.js and TypeScript, designed to showcase my projects and skills. The website features responsive design, optimized performance, and modern UI built with Sass.",
+    "keyFeatures": [
+      "Responsive design for all devices.",
+      "Dynamic project listings fetched from JSON.",
+      "Optimized performance with lazy loading and bundling using Vite."
+    ],
+    "technologiesUsed": ["React.js", "TypeScript", "Sass", "Vite", "EmailJS"],
+    "url": "https://portfolio-website-mauve-phi-38.vercel.app/"
   }
 ]

@@ -105,6 +105,11 @@ a {
   text-transform: uppercase;
 }
 
+.mini-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
 .description {
   text-align: center;
   width: 100%;
@@ -128,6 +133,10 @@ section {
 
 .highlight {
   color: #3B82F6;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .header {
@@ -168,7 +177,11 @@ section {
   display: flex;
   gap: 0.2rem;
 }
-.header .navigation__social-media .social-media__icons i {
+.header .navigation__social-media .social-media__icons a {
+  text-decoration: none;
+  color: inherit;
+}
+.header .navigation__social-media .social-media__icons a i {
   border: 1px solid #F8FAFC;
   border-radius: 50%;
   padding: 0.5rem;
@@ -301,6 +314,7 @@ section {
   transition: background-color 0.3s ease;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  margin-top: 0.5rem;
 }
 .projects__cards .project__card .project__details .btn-project:hover {
   background-color: rgb(19.8, 38.28, 79.2);

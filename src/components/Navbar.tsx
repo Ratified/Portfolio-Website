@@ -15,9 +15,8 @@ const Navbar: React.FC = () => {
       <div className="navigation__social-media">
         <a href="#contact-me" className="btn">Hire Me</a>
         <div className="social-media__icons">
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-instagram"></i>
+          <a href="https://github.com/Ratified"><i className="fab fa-github"></i></a>
+          <a href="www.linkedin.com/in/george-kamunge-2a30a5233"><i className="fab fa-linkedin-in"></i></a> 
         </div>
       </div>
     </nav>

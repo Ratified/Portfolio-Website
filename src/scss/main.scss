@@ -21,6 +21,11 @@ a {
   text-transform: uppercase;
 }
 
+.mini-title{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
 .description{
   text-align: center;
   width: 100%;
@@ -54,6 +59,10 @@ section {
 
 .highlight {
   color: variables.$color-light-blue;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 //Header styles
@@ -96,14 +105,19 @@ section {
         display: flex;
         gap: 0.2rem;
 
-        i{
-          border: 1px solid variables.$color-soft-white;
-          border-radius: 50%;
-          padding: 0.5rem;
-          width: 30px;
-          height: 30px;
-          @include mixins.flex-center;
+        a{
+          text-decoration: none;
+          color: inherit;
+          i{
+            border: 1px solid variables.$color-soft-white;
+            border-radius: 50%;
+            padding: 0.5rem;
+            width: 30px;
+            height: 30px;
+            @include mixins.flex-center;
+          }
         }
+
       }
     }
   }
@@ -251,6 +265,7 @@ section {
         transition: background-color 0.3s ease;
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
+        margin-top: 0.5rem;
 
         &:hover {
           background-color: darken(variables.$color-dark-blue, 10%);

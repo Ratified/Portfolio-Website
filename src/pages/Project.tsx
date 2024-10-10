@@ -35,7 +35,11 @@ const Project = () => {
 
     return (
         <>
-            <h1 className="title">{project?.title}</h1>
+
+            <div className="title-nav">
+                <h1 className="title">{project?.title}</h1>
+                { project ? (<a href={project.url} className="btn-view" target="_blank">Project Live</a>) : 'Unavailable' }
+            </div>
 
             <div className="project">          
                 {project ? (
@@ -60,7 +64,6 @@ const Project = () => {
                                     <li key={index}>{technology}</li>
                                 ))}
                             </ul>
-                            <a href={project.url} className="">View Project</a>
                         </div>
                     </>
                 ) : (
