@@ -218,7 +218,7 @@ section {
 
 .languages-container {
   overflow: hidden;
-  width: 100%; /* Ensure the container takes the full width */
+  width: 100%;
   background: linear-gradient(135deg, #1E3A78, #02041f, #F8FAFC);
   box-sizing: border-box;
 }
@@ -304,6 +304,9 @@ section {
   padding: 1rem 1.5rem;
 }
 .projects__cards .project__card .project__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   margin-top: 1rem;
 }
 .projects__cards .project__card .project__details .btn-project {
@@ -315,6 +318,9 @@ section {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   margin-top: 0.5rem;
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 .projects__cards .project__card .project__details .btn-project:hover {
   background-color: rgb(19.8, 38.28, 79.2);
