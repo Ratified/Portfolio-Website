@@ -139,6 +139,12 @@ section {
   font-weight: bold;
 }
 
+.topG {
+  background-color: #3B82F6;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
 .header {
   background: url("/images/background.jpeg") no-repeat center center/cover;
   background-attachment: fixed;
@@ -196,12 +202,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   flex-direction: column;
   text-align: center;
   position: relative;
   z-index: 1000;
   width: 60%;
   margin-inline: auto;
+}
+.header .hero h2 {
+  text-transform: uppercase;
 }
 
 .header::after {
@@ -212,7 +222,7 @@ section {
   width: 100%;
   height: 100%;
   background-color: #02041f;
-  opacity: 0.95;
+  opacity: 0.9;
   z-index: 1;
 }
 
