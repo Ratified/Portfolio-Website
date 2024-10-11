@@ -186,15 +186,15 @@ section {
   }
 }
 
-
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%); /* Start from the right side (out of view) */
+    transform: translateX(0); /* Start immediately from the right edge */
   }
   100% {
     transform: translateX(-100%); /* Move to the left side */
   }
 }
+
 
 // Service Cards
 .service__cards {
