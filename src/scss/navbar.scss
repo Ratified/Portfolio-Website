@@ -38,7 +38,7 @@
   }
 
   .social-media__icons {
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-size: 1rem;
     display: flex;
     gap: 1rem;
@@ -89,4 +89,10 @@
   .hideOnMobile, #hideOnMobile{
     display: none;
   }
+}
+
+.mobile-navigation__close{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
 }
