@@ -111,5 +111,20 @@
     ],
     "technologiesUsed": ["React.js", "TypeScript", "Sass", "Vite", "EmailJS"],
     "url": "https://portfolio-website-mauve-phi-38.vercel.app/"
+  },
+  {
+    "id": 10,
+    "title": "Frontend Mentor Challenges (600points +)",
+    "scope": "Frontend Development",
+    "images": ["/images/mentor/mentor01.png", "/images/mentor/mentor02.png", "/images/mentor/mentor03.png", "/images/mentor/mentor04.png", "/images/mentor/mentor05.png"],
+    "description": "A collection of Frontend Mentor challenges completed with a score of 600 points or higher. Demonstrates proficiency in HTML, CSS, and JavaScript, with a focus on responsive design and modern UI.",
+    "keyFeatures": [
+      "Responsive design for all devices.",
+      "Modern UI with clean typography and visual hierarchy.",
+      "Effective use of CSS for animations and transitions.",
+      "Participated in Code Reviews and provided feedback."
+    ],
+    "technologiesUsed": ["HTML", "CSS", "Sass", "TailwindCSS", "JavaScript", "React JS", "Gulp"],
+    "url": "https://www.frontendmentor.io/profile/Ratified"
   }
 ]
