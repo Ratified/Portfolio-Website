@@ -1,0 +1,92 @@
+@use "variables";
+@use "mixins";
+
+.navigation__hamburger {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.mobile-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-height: 20vh;
+  background-color: variables.$color-dark-blue;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: none;
+  @include mixins.flex-column;
+  align-items: center;
+  border-radius: 0.5rem;
+
+  ul {
+    list-style: none;
+    @include mixins.flex-gap;
+    @include mixins.flex-column;
+    li {
+      a {
+        color: variables.$color-soft-white;
+      }
+    }
+  }
+
+  .close-btn {
+    color: variables.$color-soft-white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .social-media__icons {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      i {
+        border: 1px solid variables.$color-soft-white;
+        border-radius: 50%;
+        padding: 0.5rem;
+        width: 30px;
+        height: 30px;
+        @include mixins.flex-center;
+      }
+    }
+  }
+}
+
+.navigation__hamburger {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Hide the mobile navigation by default */
+.mobile-navigation {
+  display: none;
+}
+
+/* Show the mobile navigation when active */
+.mobile-navigation.active {
+  display: flex; 
+}
+
+/* Hide the hamburger on larger screens */
+@media (min-width: 768px) {
+  .navigation__hamburger {
+    display: none;
+  }
+
+  /* Ensure mobile navigation is hidden on larger screens */
+  .mobile-navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hideOnMobile, #hideOnMobile{
+    display: none;
+  }
+}
