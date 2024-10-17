@@ -40,18 +40,6 @@ section {
   margin: 2rem 0;
 }
 
-// .btn {
-//   @include mixins.button(large);
-//   background-color: variables.$color-light-blue;
-//   color: variables.$color-soft-white;
-//   cursor: pointer;
-//   transition: background-color 0.3s ease;
-
-//   &:hover {
-//     background-color: darken(variables.$color-light-blue, 10%);
-//   }
-// }
-
 .service__cards,
 .education__cards {
   @include mixins.responsive-grid(350px, 1rem);

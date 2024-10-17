@@ -71,20 +71,6 @@
     "url": "https://github.com/Ratified/Laragigs.git"
   },
   {
-    "id": 6,
-    "title": "Job Listings (Vue JS)",
-    "scope": "Fullstack Development",
-    "images": ["/images/vue/vue01.png", "/images/vue/vue02.png", "/images/vue/vue03.png", "/images/vue/vue04.png", "/images/vue/vue05.png"],
-    "description": "A job listing application developed with Vue.js, TailwindCSS, and Express.js. Demonstrates proficiency in front-end frameworks and API development.",
-    "keyFeatures": [
-      "Real-time job listings.",
-      "Responsive design with TailwindCSS.",
-      "Backend API integration with Node.js and Express."
-    ],
-    "technologiesUsed": ["Vue.js", "TailwindCSS", "Express.js", "TypeScript"],
-    "url": "https://job-listings-vue-js.vercel.app/"
-  },
-  {
     "id": 7,
     "title": "Mini Testing Framework",
     "scope": "Fullstack Development",
